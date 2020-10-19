@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+/* ----- Selector de hijos ----- */
+p > strong { /* llama al hijo directo */
+	color: orange;
+}
+/* ----- Selector de Hermano Adyacente ----- */
+h2+p {
+	background-color: orange;
+}
+/* ----- Selector de Hermanos ----- */
+.hermano-gral h2~p{
+	background-color: black;
+	color: white;
+}
+/* ----- Selector de Atributo ----- */
+
+/* -- por nombre del atributo -- */
+img[alt] {
+  border: 2px solid #000000;
+  /* todas las imagenes con el atributo alt
+    van a tener un borde negro de 2 px*/
+} 
+
+/* -- por valor del atributo -- */
+img[alt="imagen-aleatoria2"] {
+  border: 2px solid #FF0000;
+  /* todas las imagenes con el valor: imagen-aleatoria2
+    en el atributo alt, van a tener un borde
+    rojo de 2 px*/
+}
+/* -- por sub-cadena -- */
+img[alt^="imagen-"] {
+ border: 4px solid #65057A;
+   /* todas las imagenes donde el valor de alt 
+      comience con "cadena" se les va a aplicar un box-shadow. ^ indica que va a seleccionar
+      solo a los elementos que comiencen con el valor indicado */
+}
+img[alt$="verde"] {
+ box-shadow: 8px 2px #3AC332;
+   /* todas las imagenes donde el valor de alt 
+      que terminen con "verde" se les va a aplicar un box-shadow. $ indica que va a seleccionar
+      solo a los elementos que terminen con el valor indicado */
+}

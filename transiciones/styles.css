@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ----- transición header ----- */
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 3px 10px 10px black;
+}
+h1:hover {
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: ease-in;
+	/* transition: color 2s linear; */
+	color: rgba(0,212,255,1);
+}
+#transicion {
+  width: 20vw;
+  height: 5vh;
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(226,0,0,0.6867121848739496) 24%, rgba(240,153,0,1) 41%, rgba(255,252,0,1) 57%, rgba(89,240,0,1) 76%, rgba(0,254,255,1) 100%);
+  transition: width 2s;
+  transition-timing-function: ease-in ;
+}
+#transicion:hover {
+  width: 100vw;
+}
+/* ----- transición botón ----- */
+.flex-container{
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.boton {
+  	height: 10vh;
+  	width: 20vw;
+  	font-size: 1rem;
+  	cursor: pointer; /* grab | zoom-in | zoom-out | text | move | help | etc */
+  	transition: box-shadow 2s ease-in-out;
+}
+.boton:hover {
+	background-color: black;
+	color: white;
+  	font-size: 1.1rem;
+  	transform: scale(1.2);
+  	border: 1px;
+  	box-shadow: 0px 0px 2px 2px black;
+}
+/* ----- transición imagen ----- */
+img {
+		transition: filter 2s;
+}
+img:hover {
+	filter: brightness(10%); /* blur | saturate | contrast | opacity | invert | grayscale | sepia */
+}

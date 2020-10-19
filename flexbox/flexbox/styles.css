@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
+}
+/* flex-wrap | align-content | flex-basis | order */
+.flex-container {
+	width: 500px;
+	height: 500px;
+	background-color: violet;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;  /*nowrap | wrap | wrap-reverse */
+	align-content: flex-start;
+}
+.flex-item {
+	background-color: tomato;
+	width: 100px;
+	height: 100px;
+}
+.flex-item:nth-child(even) {
+	background-color: orange;
+}

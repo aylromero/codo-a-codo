@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+/* ----- first-child y last-chid ----- */
+p:first-child {
+	background-color: violet;
+}
+p:last-child {
+	background-color:orange;
+}
+/* ----- nth-child() ----- */
+li:nth-child(5){
+	color: violet;
+	font-weight: bold;
+}
+li:nth-child(5n){
+	background-color: orange;
+}
+li:nth-child(2n+1){
+	color:tomato;
+}
+li:nth-child(even){
+	color: green;
+}
+li:nth-child(odd){
+	color:red;
+}
+/* ----- enlaces ----- */
+a {
+	text-decoration: none;
+}
+.fab {
+	color: black;
+	font-size: 3rem;
+}
+.fa-youtube:hover {
+	color: red;
+}
+.fa-twitter:hover {
+	color: lightblue;
+}
+.fa-facebook-f:hover {
+	color: blue;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 3rem;
+	text-align: center;
+}
+/* ----- animación imagen ----- */
+.imagen-mundo {
+	margin: 5%;
+  	display: block;
+  	width: 150px;
+  	height: 150px;
+  	animation: rotacion-mundo infinite 3s ease-in-out alternate-reverse forwards;
+}
+
+.imagen-mundo:hover {
+  	animation-play-state: paused;
+}
+@keyframes rotacion-mundo {
+  from { /* from equivale a 0% */
+    transform: translate(-5vw, 0) rotate(0deg);
+  }
+  to { /* to equivale a 100% */
+    transform: translate(50vw, 0) rotate(360deg);
+  }
+}
+/* ----- animación div ----- */
+#div-animado {
+    animation: animacion 10s infinite;
+}
+@keyframes animacion {
+	0% {
+        width: 10vw;
+        height: 10vh;
+        background-color: #ff0000;
+	}
+	25% {
+		width: 20vw;
+		height: 20vh;
+		background-color: #f09900;
+	}
+	50% {
+		width: 50vw;
+		height: 25vh;
+		background-color: #fffc00;
+	}
+	75% {
+		width: 90vw;
+        height: 30vh;
+        background-color: #59f000;
+	}
+	100% {
+        width: 100vw;
+        height: 35vh;
+        background-color: #00feff;
+	}
+}

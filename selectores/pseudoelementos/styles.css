@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+h1::first-letter {
+	color: orange;
+}
+p::first-line {
+	color: violet;
+}
+h2::before{
+	content: "👹";
+}
+h2::after{
+	content: "🐼";
+}
+p::selection {
+	background-color: red;
+	color: white;
+}
