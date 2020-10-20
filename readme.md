@@ -18,4 +18,3 @@
 
 📚 Drive del curso [acá](https://drive.google.com/drive/folders/1Q8eEQRl2tH6rlVj98qk9aZnfFQHoSVYq) 
 
-⭐️ From [Aylén](https://github.com/aylromero)
