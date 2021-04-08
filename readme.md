@@ -1,7 +1,5 @@
 <h1> Hola! <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30px"></h1>
 
-## Repositorio creado para colaborar con alumnos
-
 ## Codo a Codo 4.0 Comisión 2009
 
 
